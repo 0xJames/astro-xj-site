@@ -1,4 +1,4 @@
-export const footerSocials = [
+export const footerSocials = [/*
   {
     name: 'Twitter',
     url: 'https://twitter.com/littlesticksdev',
@@ -19,9 +19,9 @@ export const footerSocials = [
     url: 'https://littlesticks.dev/discord',
     icon: "ic:baseline-discord",
   },
-]
+*/]
 
-export const footerLists = [
+export const footerLists = [/*
 	{
 		title: 'Landing Pages',
 		items: [
@@ -77,4 +77,4 @@ export const footerLists = [
       }
 		],
 	},
-];
+*/];
