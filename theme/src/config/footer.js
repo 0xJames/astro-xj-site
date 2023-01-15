@@ -21,34 +21,57 @@ export const footerSocials = [/*
   },
 */]
 
-export const footerLists = [/*
+export const footerLists = [
 	{
-		title: 'Landing Pages',
+		title: '',
 		items: [
 			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
+				title: '',
+				slug: '',
 			},
 			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
+				title: '',
+				slug: '',
 			},
-      // {
-			// 	title: 'Landing Page 3',
-			// 	slug: '/landing-pages/landing-3',
-			// },
+      		{
+			 	title: '',
+			 	slug: '',
+			},
+		],
+	}, 
+
+	{
+		title: '',
+		items: [
+			{
+				title: '',
+				slug: '',
+			},
+			{
+				title: '',
+				slug: '',
+			},
+      {
+        title: '',
+        slug: '',
+      },
+      {
+        title: '',
+        slug: '',
+      }
 		],
 	},
+
 	{
 		title: 'Company',
 		items: [
 			{
-				title: 'About',
-				slug: '/company/about',
+				title: 'Products',
+				slug: '/products',
 			},
 			{
-				title: 'Blog',
-				slug: '/blog',
+				title: 'About',
+				slug: '/company/about',
 			},
 			{
 				title: 'Contact',
@@ -56,25 +79,5 @@ export const footerLists = [/*
 			},
 		],
 	},
-	{
-		title: 'Theme',
-		items: [
-			{
-				title: 'Get Started',
-				slug: '/theme/get-started',
-			},
-			{
-				title: 'Style Guide',
-				slug: '/theme/style-guide',
-			},
-      {
-        title: 'Theme Setup',
-        slug: '/theme/theme-setup',
-      },
-      {
-        title: 'Customizing Odyssey',
-        slug: '/theme/customizing-odyssey',
-      }
-		],
-	},
-*/];
+	
+];
