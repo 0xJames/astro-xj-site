@@ -5,14 +5,14 @@ export const nav = [
 	},
 	{
 		title: 'Products',
-		slug: '/blog',
+		slug: '/products',
 	},
 	{
 		title: 'About',
 		slug: '/company/about',
 	},
-	{
-		title: 'Contact Us',
-		slug: '/company/contact',
-	},
+	// {
+	// 	title: 'Contact Us',
+	// 	slug: '/company/contact',
+	// },
 ];
