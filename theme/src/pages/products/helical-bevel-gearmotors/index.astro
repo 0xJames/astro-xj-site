@@ -6,9 +6,10 @@ import ProductHeroSection from '../../../components/sections/heros/ProductHeroSe
 import SideNavBar from '../../../components/sections/heros/SideNavBar.astro';
 
 const seo = {
-	title: 'Worm Gear Reducers | X&J Products',
+	title: 'Helical-Bevel Gearmotors | X&J Products',
 	description: 'Helical-Bevel Gearmotors',
 };
+
 ---
 
 <Layout {seo}>
@@ -21,13 +22,32 @@ const seo = {
 	
 		<picture slot="image-container">
 		  <img
-			  src="/assets/images/products/precision-reducers/planetary-reducers.jpg"
+			  src="/assets/images/products/helical-bevel/tr.jpg"
 			  alt="X&J Products"
-			  id="art-cover-image"
+			  id="tr"
 			/>
-		  <figcaption>Precision Planetary Reducers</figcaption>
-		  
+		  <figcaption>TR Series</figcaption>
 		</picture>
+
+		<picture slot="image-container">
+		  <img
+			  src="/assets/images/products/helical-bevel/tk.jpg"
+			  alt="X&J Products"
+			  id="tk"
+			/>
+			<figcaption>TK Series</figcaption>
+		
+		</picture>
+
+		<picture slot="image-container">
+			<img
+				src="/assets/images/products/helical-bevel/ts.jpg"
+				alt="X&J Products"
+				id="ts"
+			  />
+			  <figcaption>TS Series</figcaption>
+		  
+		  </picture>
 		
 
 		</ProductHeroSection>
@@ -44,12 +64,18 @@ const seo = {
 	}
 
 	picture{
-		width: 50%;
+		width: 80%;
 
 	}
 
 	figcaption{
 		color:black;
 		text-align: center;
+	}
+
+	.hero-section__image {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap:2rem;
 	}
   </style>
