@@ -1,7 +1,8 @@
 ---
 import { TextSection } from '@littlesticks/odyssey-theme-components';
 import Layout from '../../layouts/Page.astro';
-import HeroSection from '../../components/sections/heros/HeroSection.astro';
+import SideNavBar from '../../components/sections/heros/SideNavBar.astro';
+import ProductHeroSection from '../../components/sections/ProductHeroSection.astro';
 
 const seo = {
 	title: 'Products | X&J Products',
@@ -9,59 +10,32 @@ const seo = {
 };
 ---
 
-<Layout>
-  <HeroSection>
-	<picture slot="image-container">
-	<img
-        src="/assets/images/products/product-catelog2020.jpg"
-        alt="X&J Products"
-        id="art-cover-image"
-      />
-	</picture>
+<Layout> 
+  <div class="hero-container">
+    <SideNavBar>
 
-	<div>Helllo</div>
-  </HeroSection>
-  
-  <!-- Side navigation -->
-  <div class="sidenav">
+    </SideNavBar>
 
-	<a href="products/worm-gear-reducers/">Worm Gear Reducers</a>
-	<a href="#">Helical-Bevel Gearmotors</a>
-	<a href="#">Induction Motors</a>
-	<a href="#">Brake Motors</a>
-	<a href="#">Speed Reducers</a>
-	<a href="#">Precision Reducers </a>
+    <ProductHeroSection>  
 
+    <picture slot="image-container">
+    <img
+          src="/assets/images/products/product-catelog2020.jpg"
+          alt="X&J Products"
+          id="art-cover-image"
+        />
+    </picture>
+
+    </ProductHeroSection>
   </div>
   
+
 </Layout>
 
 <style>
-	/* The sidebar menu */
-.sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 180px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 200px;
-}
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
+  .hero-container{
+    display: flex;
+    background-color: aliceblue;
+  }
 </style>
 
