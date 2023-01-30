@@ -2,17 +2,39 @@
 import { TextSection } from '@littlesticks/odyssey-theme-components';
 import Layout from '../../../layouts/Page.astro';
 import HeroSection from '../../../components/sections/heros/HeroSection.astro';
+import ProductHeroSection from '../../../components/sections/heros/ProductHeroSection.astro';
 import SideNavBar from '../../../components/sections/heros/SideNavBar.astro';
+
 const seo = {
-	title: 'About | X&J Products',
-	description: 'About Page',
+	title: 'Worm Gear Reducers | X&J Products',
+	description: 'Worm Gear Reducers',
 };
 ---
 
 <Layout {seo}>
-
-	<SideNavBar>
-
-    </SideNavBar>
+	<div class="hero-container">
+		<SideNavBar>
+	
+		</SideNavBar>
+	
+		<ProductHeroSection>  
+	
+		<picture slot="image-container">
+		<img
+			  src="/assets/images/products/product-catelog2020.jpg"
+			  alt="X&J Products"
+			  id="art-cover-image"
+			/>
+		</picture>
+	
+		</ProductHeroSection>
+	  </div>
 
 </Layout>
+
+<style>
+	.hero-container{
+	  display: flex;
+	  background-color: aliceblue;
+	}
+  </style>
