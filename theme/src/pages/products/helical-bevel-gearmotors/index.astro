@@ -18,7 +18,7 @@ const seo = {
 	
 		</SideNavBar>
 	
-		<ProductHeroSection>  
+		<ProductHeroSection class="grids">  
 	
 		<picture slot="image-container">
 		  <img
@@ -61,6 +61,12 @@ const seo = {
 	.hero-container{
 	  display: flex;
 	  background-color: aliceblue;
+	}
+
+	.grids{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap:2rem;
 	}
 
 	picture{

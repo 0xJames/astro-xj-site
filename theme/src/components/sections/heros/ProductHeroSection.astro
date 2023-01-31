@@ -1,14 +1,17 @@
 ---
 import { Container } from '@littlesticks/odyssey-theme-components';
+const { class: className } = Astro.props;
 ---
 
 <Container>
 	<section class="hero-section__section">
 		
-		<div class="hero-section__image">
+		<div class={className}>
+			 <!-- class ="hero-section__image" -->
 			<slot name="image-container">
 			</slot>
 		</div>
+		<div class={className}>Hello</div>
 	</section>
 </Container>
 
@@ -33,11 +36,11 @@ import { Container } from '@littlesticks/odyssey-theme-components';
 	.hero-btns__container {
 		margin-right: 1rem;
 	}
-	.hero-section__image {
+	/* .hero-section__image {
 		display: grid;
 		grid-template-columns: 1fr;
 		gap:2rem;
-	}
+	} */
 	.hero-section__image :global(img) {
 		width: 100%;
 		height: 100%;
