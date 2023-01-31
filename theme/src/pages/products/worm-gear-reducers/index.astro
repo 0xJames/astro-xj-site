@@ -17,15 +17,56 @@ const seo = {
 	
 		</SideNavBar>
 	
-		<ProductHeroSection>  
+		<ProductHeroSection class="grids">  
 	
-		<picture slot="image-container">
-		<img
-			  src="/assets/images/products/product-catelog2020.jpg"
-			  alt="X&J Products"
-			  id="art-cover-image"
-			/>
-		</picture>
+			<picture slot="image-container">
+				<img
+					src="/assets/images/products/worm/umrv.jpg"
+					alt="X&J Products"
+					id="umrv"
+				  />
+				<figcaption>UMRV</figcaption>
+			</picture>
+	  
+			<picture slot="image-container">
+				<img
+					src="/assets/images/products/worm/umrv-vs.jpg"
+					alt="X&J Products"
+					id="umrv-vs"
+				  />
+				  <figcaption>UMRV-VS</figcaption>
+			  
+			</picture>
+	  
+			<picture slot="image-container">
+				  <img
+					  src="/assets/images/products/worm/urv.jpg"
+					  alt="X&J Products"
+					  id="urv"
+					/>
+					<figcaption>URV</figcaption>
+				
+			</picture>
+
+			<picture slot="image-container">
+				<img
+					src="/assets/images/products/worm/urv-vs.jpg"
+					alt="X&J Products"
+					id="urv-vs"
+				  />
+				  <figcaption>URV-VS</figcaption>
+			  
+		    </picture>
+
+			<picture slot="image-container">
+				<img
+					src="/assets/images/products/worm/sw.jpg"
+					alt="X&J Products"
+					id="sw"
+				  />
+				  <figcaption>SW</figcaption>
+			  
+		    </picture>
 	
 		</ProductHeroSection>
 	  </div>
@@ -36,5 +77,21 @@ const seo = {
 	.hero-container{
 	  display: flex;
 	  background-color: aliceblue;
+	}
+
+	.grids{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap:2rem;
+	}
+
+	picture{
+		width: 50%;
+
+	}
+
+	figcaption{
+		color:black;
+		text-align: center;
 	}
   </style>

@@ -17,18 +17,34 @@ const seo = {
 	
 		</SideNavBar>
 	
-		<ProductHeroSection>  
+		<ProductHeroSection class="grids">  
 	
 		<picture slot="image-container">
-		<img
-			  src="/assets/images/products/product-catelog2020.jpg"
+		  <img
+			  src="/assets/images/products/brake-motors/ba.jpg"
 			  alt="X&J Products"
-			  id="art-cover-image"
+			  id="ba"
 			/>
+		  <figcaption>BA</figcaption>
 		</picture>
-	
+
+		<picture slot="image-container">
+		  <img
+			  src="/assets/images/products/brake-motors/bm.jpg"
+			  alt="X&J Products"
+			  id="bm"
+			/>
+			<figcaption>BM</figcaption>
+		
+		</picture>
+
+		
+		
+
 		</ProductHeroSection>
-	  </div>
+	</div>
+
+
 
 </Layout>
 
@@ -37,4 +53,23 @@ const seo = {
 	  display: flex;
 	  background-color: aliceblue;
 	}
+
+	.grids{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10rem;
+	}
+
+	picture{
+		width: 100%;
+		height: auto;
+		max-width: 400px;
+		
+	}
+
+	figcaption{
+		color:black;
+		text-align: center;
+	}
+
   </style>

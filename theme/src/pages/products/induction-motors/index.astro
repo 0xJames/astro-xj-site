@@ -2,13 +2,83 @@
 import { TextSection } from '@littlesticks/odyssey-theme-components';
 import Layout from '../../../layouts/Page.astro';
 import HeroSection from '../../../components/sections/heros/HeroSection.astro';
+import ProductHeroSection from '../../../components/sections/heros/ProductHeroSection.astro';
+import SideNavBar from '../../../components/sections/heros/SideNavBar.astro';
 
 const seo = {
-	title: 'About | X&J Products',
-	description: 'About Page',
+	title: 'Helical-Bevel Gearmotors | X&J Products',
+	description: 'Helical-Bevel Gearmotors',
 };
+
 ---
 
 <Layout {seo}>
+	<div class="hero-container">
+		<SideNavBar>
+	
+		</SideNavBar>
+	
+		<ProductHeroSection class="grids">  
+	
+		<picture slot="image-container">
+		  <img
+			  src="/assets/images/products/induction/b3.jpg"
+			  alt="X&J Products"
+			  id="b3"
+			/>
+		  <figcaption>B3</figcaption>
+		</picture>
+
+		<picture slot="image-container">
+		  <img
+			  src="/assets/images/products/induction/b5.jpg"
+			  alt="X&J Products"
+			  id="b5"
+			/>
+			<figcaption>B5</figcaption>
+		
+		</picture>
+
+		<picture slot="image-container">
+			<img
+				src="/assets/images/products/induction/b14.jpg"
+				alt="X&J Products"
+				id="b14"
+			  />
+			  <figcaption>B14</figcaption>
+		  
+		</picture>
+		
+
+		</ProductHeroSection>
+	</div>
+
+
 
 </Layout>
+
+<style>
+	.hero-container{
+	  display: flex;
+	  background-color: aliceblue;
+	}
+
+	.grids{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap:2rem;
+	}
+
+	picture{
+		width: 80%;
+		height: auto;
+		max-width: 400px;
+		
+	}
+
+	figcaption{
+		color:black;
+		text-align: center;
+	}
+	
+  </style>
