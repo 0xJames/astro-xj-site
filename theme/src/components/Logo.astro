@@ -5,12 +5,24 @@
 <div class="logo-group">
 	<img id="xj-logo"
     src="/xj-logo-color.svg">
-	<p class="company-name">
-	X&J Products
-	</p>
+	
+
+
+
+	<div class="xj-ucan">
+		<p class="xj-text">
+			X&J Products
+		</p>
+		<div class="ucan-group"
+			<p>A</p>
+			<img id="ucan-logo" src="/UCAN_LOGO.jpg">
+			<p>Company</p>
+		</div>
+	</div>
 </div>
 
-	
+
+
 
 
 
@@ -27,13 +39,25 @@
 		
 	}
 
-	.company-name{
+	/* .company-name{
 		margin:0;
 		margin-left: -20px;
 		margin-right: 20px;
 		padding:10px;
 
+	} */
+
+	.ucan-group{
+		display: flex;
+		/* margin-top: -70px; */
+		margin-left: 50px;
+		/* font-weight: bold; */
+		font-family: var(--theme-font-family-serif);
+		font-size: var(--font-size-sm);
+		
+		
 	}
+
 	/* .logo-group:hover {
 		text-decoration: underline;
 		cursor: pointer;
@@ -54,8 +78,14 @@
 
 
 	#xj-logo {
-	  width:200px
+	  width:200px;
 	  
+	}
+
+	#ucan-logo {
+	  width:70px;
+	  height: 30px;
+	  margin:0 18px;
 	}
 
 </style>
