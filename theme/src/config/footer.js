@@ -41,14 +41,14 @@ export const footerLists = [
 	}, 
 
 	{
-		title: '',
+		title: 'Resources',
 		items: [
 			{
-				title: '',
-				slug: '',
+				title: 'Warranties',
+				slug: '/resources/warranties',
 			},
 			{
-				title: '',
+				// title: 'Catelogues',
 				slug: '',
 			},
       {
